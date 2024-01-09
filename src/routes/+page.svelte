@@ -17,6 +17,10 @@
 
 <!--binding values to input fields-->
     <input type="text" bind:value={title}>
+
+    <a href="/guides">View Guides</a>
+    <a href="/about">About</a>
+
 </div>
 
 <style>
