@@ -1,8 +1,7 @@
 <script>
-    import Title from "$lib/title/+page.svelte"
+
 </script>
 
-<Title title="Korvo Gaming Review" />
 <div class="about">
     <h2>about us</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam delectus dolores, doloribus error illo

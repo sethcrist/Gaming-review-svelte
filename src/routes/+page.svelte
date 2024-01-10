@@ -1,9 +1,9 @@
 <script>
-    import Title from "$lib/title/+page.svelte"
+
 </script>
 
 
-<Title />
+
 <div class="index">
     <h2>Welcome</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores aspernatur assumenda autem,
