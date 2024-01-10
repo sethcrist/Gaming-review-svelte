@@ -15,7 +15,7 @@
     </main>
 
 <footer>
-    <p>Copyright 2022 Korvo Gaming guide</p>
+    <p>Copyright 2024 Korvo Gaming guide</p>
 </footer>
 
 <style>

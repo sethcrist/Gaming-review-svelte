@@ -13,15 +13,18 @@
     }
     .title img {
         display: inline-block;
-
+        border-radius: 50px;
+        width: 75px;
+        height: 75px;
+        margin-top: 40px;
     }
     .title h1 {
-        margin-left: 10px;
+        margin-left: 5px;
     }
     h1 {
         display: inline-block;
-        margin-top: 57px;
-        font-size: 3em;
+        margin-top: 60px;
+        font-size: 2em;
         /*color: linear-gradient(to right, blue, purple)*/
     }
 </style>

@@ -5,6 +5,9 @@
     </ul>
 </div>
 
+<!--<footer>-->
+<!--</footer>-->
+
 <style>
     .guides {
         margin-top: 20px;
