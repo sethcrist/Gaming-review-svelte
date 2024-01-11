@@ -1,25 +1,33 @@
 <!--fetching data-->
-<script context="module">
-    export async function load({ fetch }) {
-        const res = await fetch('https://jsonplaceholder.typicode.com/posts')
-        const guides = await res.json()
-
-        if (res.ok) {
-            return {
-                props: {
-                  guides
-                }
-            }
-        }
-        return {
-            status: res.status,
-            error: new Error('could not fetch the guides')
-        }
-    }
-</script>
-
 <script>
-    export let guides
+    import {onMount} from "svelte";
+
+    /**
+     * @typedef {Object} Guide
+     * @property {number} userId - the User ID
+     * @property {number} it - weird id
+     * @property {string} title - The title of the guide
+     * @property {string} body - The body content of the guide
+     */
+
+    // {
+    //     "userId": 1,
+    //     "it": 1,
+    //     "title": "are or do repels provide blacked out except option criticizes",
+    //     "body": "because he also accepts\nundertakes the consequences of refusal and when\nhe criticizes the trouble so that the whole\nof our things are but they are the matter will happen to the architect"
+    // },
+
+    /** @type {Guide[]} */
+    let guides = [];
+
+    onMount(async () => {
+        /** @type {Response} */
+        const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+        if (res.ok) {
+            guides = await res.json();
+            console.log(res);
+        }
+    });
 </script>
 
 <div class="guides">
